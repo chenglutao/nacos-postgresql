@@ -306,7 +306,7 @@ CREATE TABLE "public"."his_config_info" (
   "app_name" varchar(128) COLLATE "pg_catalog"."default",
   "content" text COLLATE "pg_catalog"."default" NOT NULL,
   "md5" varchar(32) COLLATE "pg_catalog"."default",
-  "gmt_create" timestamp(6) NOT NULL,
+  "gmt_create" timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "gmt_modified" timestamp(6) NOT NULL,
   "src_user" text COLLATE "pg_catalog"."default",
   "src_ip" varchar(50) COLLATE "pg_catalog"."default",
